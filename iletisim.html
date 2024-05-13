@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/png" href="images/syria.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel = "stylesheet" href = "iletisim.css">
+    <title> Bana ulaşın </title>
+    
+
+</head>
+
+<body>
+
+    <!-- Header section -->
+    <header>
+      <a href = "index.html" class = "logo"> Yazan </a>
+      <nav class = "navigation">
+      
+          <a href = "index.html" > Hakkımda </a>
+          <a href = "sehrim.html" > Şehrim </a>
+          <a href = "api.html" class = "marvel"> APİ </a>
+          <a href = "#iletisim" > İLetişim </a>
+          <a href = "giris.php" > Kullanıcı Girişi </a>
+          
+      
+       </nav> 
+   </header>
+
+     <!-- Main section -->
+     <section class = "main">
+      <div>
+          <h2> Merhabalar!, Ben Yazan <br> <span> Bilgisayar Mühendisi </span> </h2>
+          <h3> CV'mi görüntülemek için </h3>
+          <a href = "cv.html" class = "cv-btn"> Bana tıklayın </a>
+          <div class = "social-icons">
+              <a href = "https://www.instagram.com/4yznx/"> <i class="fa-brands fa-instagram"> </i> </a>
+              <a href = "https://github.com/4yznx"> <i class="fa-brands fa-github"> </i> </a>
+          </div>
+      </div>
+   </section>
+
+     <!-- Form section -->
+     <section id = "iletisim">
+      
+        <div class="container">
+            <form action = "iletisim.php" method="post">
+              <i class="fas fa-paper-plane"></i>
+        
+              <div class="input-group">
+                <label>Adınız</label>
+                <input type="text" placeholder="Adınızı Soyadınızı Girin" id = "uname" onkeyup="validateName()" name = "uname">
+                <span id="name-error"></span>
+              </div>
+        
+              <div class="input-group">
+                <label>Telefon numaranız</label>
+                <input type="tel" placeholder="5539625968" id = "contact-phone" onkeyup="validatePhone()" name = "uphone">
+                <span id="phone-error"></span>
+              </div>
+        
+              <div class="input-group">
+                <label>E-postanız</label>
+                <input type="email" placeholder="yazan@gmail.com" id = "contact-email" onkeyup="validateEmail()" name = "uemail">
+                <span id="email-error"></span>
+              </div>   
+        
+              <div class="input-group">
+                <label>Mesajınız</label>
+                <textarea rows="5" placeholder="Mesajınızı yazın" id = "contact-message" onkeyup="validateMessage()" name = "umessage">
+                </textarea>
+                <span id="message-error"></span>
+              </div>
+        
+            <button onclick = "return validateForm()"> Gönderin </button>
+            <button type = "reset"> Hepsini Silin </button>
+            <span id="submit-error"></span>
+            
+          </form>
+          </div>
+          
+     </section>
+
+     <!-- Footer section -->
+
+     <footer class = "footer">
+        <p class = "footer=title"> Copyright @ <span> Yazan Alsolyman </span> </p>
+        <div class = "social-icons">
+            <a href = "https://www.instagram.com/4yznx/"> <i class="fa-brands fa-instagram"> </i> </a>
+            <a href = "https://github.com/4yznx"> <i class="fa-brands fa-github"> </i> </a>
+        </div>
+     </footer>
+
+     <script src = "iletisim.js"></script>
+</body>
+</html>

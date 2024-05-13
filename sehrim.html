@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/png" href="images/syria.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel = "stylesheet" href = "sehrim.css">
+    <title> İstanbul </title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+</head>
+
+<body>
+
+    <!-- Header section -->
+    <header>
+      <a href = "index.html" class = "logo"> Yazan </a>
+      <nav class = "navigation">
+      
+            <a href = "index.html" > Hakkımda </a>
+            <a href = "#sehrim" > Şehrim </a>
+            <a href = "api.html" > APİ </a>
+            <a href = "iletisim.html" > İLetişim </a>
+            <a href = "giris.php" > Kullanıcı Girişi </a>
+        
+         </nav> 
+     </header>
+
+     <!-- Main section -->
+     <section class = "main">
+        <div>
+            <h2> Merhabalar! <br> <span> İstanbul'a hoş geldiniz! </span> </h2>
+            <h3> Takımımız sayfasını görüntülemek için </h3>
+            <a href = "takimimiz.html" class = "takimimiz-btn"> Bana tıklayın </a>
+        </div>
+     </section>
+
+     <!-- 1st section -->
+     <section class = "cards" id = "sehrim">
+        <h2 class = "title"> İstanbul'un Tarihi </h2>
+        <div class = "content">
+            <div class = "card">
+                <div class = "info">
+                    <p> İstanbul, 4. yüzyıldan 20. yüzyıla kadar yaklaşık on altı yüzyıl boyunca dünyanın en önemli ve en büyük metropolleri arasında bulunmuş bir şehir olmuştur.Avrupa, Asya ve Afrika kıtalarının buluştuğu geniş bir bölgenin tartışmasız tek hâkimi olmuş ve bu süreç içerisinde dünya tarihini önemli derecede etkilemeyi başarmıştır. İstanbul yaklaşık 1600 yıl boyunca, M.S. 330'dan 1922'ye kadar bulunan dönemde; sırasıyla Roma İmparatorluğu (330-395), Bizans İmparatorluğu (395-1204, 1261-1453), Latin İmparatorluğu (1204-1261) ve Osmanlı İmparatorluğu (1453-1922) olmak üzere dört farklı imparatorluğa başkentlik yapmıştır. Bu imparatorlukların üçü, var oldukları dönemde dünyanın iktidar sahibi ve en güçlü devletleri olarak tarihe geçmiştir. Hepsinin İstanbul'dan yönetildiği düşünüldüğünde, şehrin tarihsel önemi ve değeri kolaylıkla anlaşılabilir. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- 2nd section -->
+        <section class = "cards" id = "sehrim">
+            <h2 class = "title"> Istanbul'un Nüfusu </h2>
+            <div class = "content">
+                <div class = "card">
+                    <div class = "info">
+                        <p> İstanbul 2023 nüfusu, tahmini verilere göre 16.067.031. Bu nüfus verisi, eski yıllarıdaki nüfus artış hızlarına göre tahmini hesaplanmıştır. İstanbul 2023 resmi nüfus bilgileri 2024 yılının başında açıklanacaktır.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slider section-->
+        <section>
+            <h2 class="title">Istanbul'da Gezilecek Yerler</h2>
+<div class="container">
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <a href="https://tr.wikipedia.org/wiki/Ayasofya#:~:text=Ayasofya%2C%20Bizans%20mimarisinin%20ba%C5%9F%20eseri,Bizans%20mimarisinin%20bir%20simgesi%20olmu%C5%9Ftur."><img src="images/ayasofya.jpg"></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="https://tr.wikipedia.org/wiki/K%C4%B1z_Kulesi"><img src="images/kizkulesi.jpg"></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="https://tr.wikipedia.org/wiki/Dolmabah%C3%A7e_Saray%C4%B1"><img src="images/dolmabahce.jpg"></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="https://tr.wikipedia.org/wiki/Emin%C3%B6n%C3%BC"><img src="images/eminonu.jpg"></a>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
+
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        
+        <script>
+            const swiper = new Swiper('.swiper', {
+
+              loop: true,
+
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              scrollbar: {
+                el: '.swiper-scrollbar',
+              },
+            });
+          </script>
+
+        </section>
+
+        <!-- Footer section -->
+        <footer class = "footer">
+            <p class = "footer=title"> Copyright @ <span> Yazan Alsolyman </span> </p>
+            <div class = "social-icons">
+                <a href = "https://www.instagram.com/4yznx/"> <i class="fa-brands fa-instagram"> </i> </a>
+                <a href = "https://github.com/4yznx"> <i class="fa-brands fa-github"> </i> </a>
+            </div>
+         </footer>
+
+</body>
+</html>

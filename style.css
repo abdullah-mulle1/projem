@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Header section */
+
+header {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover {
+    color: green;
+}
+
+.navigation .marvel:hover {
+    color: rgb(180, 0, 0);
+}
+
+/* Main section */
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/thematrix.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 1000;    
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color:white;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color:white;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.cv-btn {
+    color:white;
+    background-color: green;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 800;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.4s ease;
+}
+
+.cv-btn:hover {
+    transform: scale(1.1);
+}
+
+.social-icons a{
+    color: white;
+    font-size: 3em;
+    padding-right: 30px;
+}
+
+/* First section */
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 50em;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 25px;
+    flex-direction: column;
+}
+
+.info p {
+    font-size: 1em;
+    font-weight: 500;
+    margin: 10px;
+ }
+
+ .circle {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border: 5px solid green;
+}
+
+/* Second section */
+
+.projects {
+    background-color: black;
+}
+
+.projects .title {
+    color: green;
+}
+
+.projects .content {
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+}
+
+.project-image img {
+    width: 100%;
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: black;
+}
+
+.project-title {
+    color: blue;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    color: black;
+    text-decoration: none;
+}
+
+.more-details:hover {
+    color: green;
+}
+
+/* Footer section */
+
+.footer {
+    background-image:url(images/thematrix.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer .social-icons {
+    color: black;
+    font-size: 0.7em;
+    padding: 0 12px 0 0;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    
+    header {
+        padding: 10px 20px;
+    }
+
+    .logo {
+        font-size: 1.5em;
+    }
+
+    .navigation a {
+        font-size: 1em;
+        padding-left: 10px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    .main h2 {
+        font-size: 1.2em;
+    }
+
+    .main h2 span {
+        font-size: 2.5em;
+    }
+
+    .main h3 {
+        font-size: 1.6em;
+        margin-bottom: 20px;
+    }
+
+    .cv-btn {
+        font-size: 1em;
+        padding: 0.7em 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .social-icons a {
+        font-size: 2.5em;
+        padding-right: 15px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .project-card {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-title {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 1.2em;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+
+    .main h2 {
+        font-size: 1em;
+    }
+
+    .main h2 span {
+        font-size: 2em;
+    }
+
+    .main h3 {
+        font-size: 1.4em;
+        margin-bottom: 10px;
+    }
+
+    .cv-btn {
+        font-size: 0.9em;
+        padding: 0.6em 1.3em;
+        margin-bottom: 10px;
+    }
+
+    .social-icons a {
+        font-size: 2em;
+        padding-right: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    .project-card {
+        min-height: auto;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .footer .social-icons {
+        font-size: 0.6em;
+        padding: 0;
+    }
+}
