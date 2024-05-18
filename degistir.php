@@ -19,7 +19,7 @@
 <body>
     <div class="nav">
         <div class="logo">
-            <p><a href="anasayfa.php"> YAZAN </a></p>
+            <p><a href="anasayfa.php"> ABDULLAH </a></p>
         </div>
 
         <div class="right-links">
