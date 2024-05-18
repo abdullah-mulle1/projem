@@ -19,7 +19,7 @@
 <body>
     <div class="nav">
         <div class="logo">
-            <p><a href="index.html"> YAZAN </a> </p>
+            <p><a href="index.html"> ABDULLAH </a> </p>
         </div>
 
         <div class="right-links">
