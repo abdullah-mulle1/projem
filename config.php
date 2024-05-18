@@ -1,5 +1,5 @@
 <?php 
  
- $con = mysqli_connect("sql304.epizy.com","epiz_34179809","RGd8UvJfdHHg0","epiz_34179809_giris") or die("Couldn't connect");
+ $con = mysqli_connect("localhost","id22185527_abdullah","Yazan194Yazan@","id22185527_sql") or die("Couldn't connect");
 
 ?>
